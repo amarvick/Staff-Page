@@ -1,0 +1,193 @@
+$background-menu-color: #0f1111;
+$nav-menu-color: #1a1a1a;
+$nav-font-color: #859393;
+
+body {
+	margin: 0;
+	padding: 0;
+
+	background-color: $background-menu-color;
+
+	text-align: center;
+}
+
+li {
+	list-style-type: none;
+}
+
+header {
+	nav {
+		background-color: $nav-menu-color;
+		color: $nav-font-color;
+
+		height: 100px;
+		width: 100%;
+
+		text-align: right;
+
+		li {
+			position: relative;
+			top: 12px;
+			left: -20px;
+
+			display: inline;
+			margin: 15px;
+
+			font-family: "Lucida Grande";
+			font-size: 16px;
+		}
+	}
+}
+
+#page-banner {
+	margin-left: auto;
+	margin-right: auto;
+
+	height: 350px;
+	width: 550px;
+
+	font-family: "Courier new";
+
+	color: #859393;
+
+	#MeetTeam {
+		font-size: 84px;
+	}
+
+	#MeetTeamSub {
+		font-size: 24px;
+	}
+}
+
+.staff-member-section {
+	position: relative;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	width: 95%;
+
+	.banner {
+		margin-left: auto;
+		margin-right: auto;
+
+		height: 35px;
+		width: 85%;
+
+		border-radius: 5px;	
+	}
+
+	li {
+		list-style-type: none;
+		display: inline-block;	
+	}
+
+	p {
+		position: relative;
+		top: 4px;
+
+		font-size: 22px;
+		font-family: "Lucida Grande";
+	}
+}
+
+#sales-department {
+	.banner {
+		background-color: #993366;
+		border-bottom: 3px solid #df9fbf;
+		color: #df9fbf;
+	}
+}
+
+#service-department {
+	.banner {
+		background-color: #3d3d5c;
+		border-bottom: 3px solid #c2c2d6;
+		color: #c2c2d6;
+	}
+}
+
+#parts-department {
+	.banner {
+		background-color: #7a7a52;
+		border-bottom: 3px solid #e0e0d1;
+		color: #e0e0d1;
+	}
+}
+
+#finance-department {
+	.banner {
+		background-color: #476b6b;
+		border-bottom: 3px solid #a3c2c2;
+		color: #a3c2c2;
+	}
+}
+
+.individual-member {
+	background-color: #a6a6a6;
+	color: #4d4d4d;
+
+	padding: 15px;
+	margin: 25px 30px 10px 30px;
+
+	height: 300px;
+	width: 200px;
+
+	border-radius: 15px;
+	border-bottom: solid #f2f2f2;
+
+	font-family: "Lucida Grande";
+
+	img {
+		height: 200px;
+		width: 200px;
+
+		border-radius: 5px;
+	}
+
+	.individual-member #name {
+		font-size: 20px;
+	}
+}
+
+hr {
+	width: 85%;
+	margin: 40px auto 40px auto;
+
+	border: 1px solid $nav-font-color;
+}
+
+footer nav {
+	position: relative;
+
+	text-align: center;
+	padding-bottom: 50px;
+
+	color: $nav-font-color;	
+
+	li {
+		display: inline;
+		margin: 15px;
+
+		font-family: "Lucida Grande";
+		font-size: 16px;
+
+		text-align: center;
+		padding-bottom: 50px;
+	}
+}
+
+@media screen and (max-width:550px) {
+
+	#page-banner {
+		height: 150px;
+
+		#MeetTeam {
+			font-size: 42px;
+		}
+
+		#MeetTeamSub {
+			font-size: 12px;
+		}
+	}
+}
